@@ -1,5 +1,3 @@
-LITTLE_WORDS = %w{ a and the over }
-
 def echo(str)
 	str
 end
@@ -22,11 +20,12 @@ def first_word(str)
 end
 
 def titleize(str)
+	little_words = %w{ a and the over }
 	phrase = str.split(" ")
 
 	titleize_phrase = []
 	phrase.each do |word|  
-		word.capitalize! unless LITTLE_WORDS.include?(word) 
+		word.capitalize! unless little_words.include?(word) 
 		titleize_phrase << word
 	end
 
