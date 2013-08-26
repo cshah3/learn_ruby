@@ -1,3 +1,4 @@
+#Hello
 def hello
 	"Hello!"
 end
